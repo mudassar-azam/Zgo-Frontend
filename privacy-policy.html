@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/privacy-page-style.css">
+  <title>ZGO Website</title>
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #ffffff, #0b1a57);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #loader .container01 {
+      text-align: center;
+    }
+
+    #loader .logo {
+      margin-bottom: 20px;
+    }
+
+    #loader .logo .logo-icon {
+      width: 150px;
+      height: auto;
+    }
+
+    #loader .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #loader .icons .icon img {
+      width: 40px;
+      height: auto;
+      animation: rotateX 3s linear infinite;
+    }
+
+    @keyframes rotateX {
+      0% {
+        transform: rotateX(0deg);
+      }
+
+      100% {
+        transform: rotateX(360deg);
+      }
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById('loader').style.display = 'none';
+      }, 2000);
+    };
+  </script>
+</head>
+
+<body>
+  <div id="loader">
+    <div class="container01">
+      <div class="logo">
+        <img class="logo-icon" src="images/Layer14.png" alt="Logo">
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 1">
+        </div>
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 2">
+        </div>
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="overlay">
+      <div class="container">
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#" class="contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <nav class="nav2">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#" class="contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <script>
+          const hamburger = document.getElementById('hamburger');
+          const sidebar = document.getElementById('sidebar');
+
+          hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+          });
+        </script>
+        <div class="header-left">
+          <img src="images/Zgo_logo_w_plug.png" alt="Zgo Logo" class="logo">
+          <h1 class="title">Privacy Policy</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="privacy-policy">
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: Feb 2025</p>
+    <p>Welcome to ZGO Charge LLC's ("ZGO") Privacy Policy. This policy outlines how ZGO collects, uses, and discloses
+      information about visitors to our website (<a href="https://www.zgocharge.com">www.zgocharge.com</a>, the "Site"),
+      users of our mobile application ("App"), SMS texting service ("SMS Service"), and the services available through
+      these platforms (collectively, the "Services"). By accessing or using our Services, you agree to the practices
+      described in this Policy.</p>
+
+    <h2>Information Disclaimer</h2>
+    <p>The information contained in this website is for general information purposes only. While we strive to keep the
+      information current and accurate, ZGO Charge LLC makes no representations or warranties about the completeness,
+      accuracy, reliability, suitability, or availability of the information, products, services, or related graphics on
+      the website. Any reliance on this information is at your own risk.</p>
+    <p>In no event will ZGO be liable for any loss or damage, including indirect or consequential damages, arising from
+      your use of this website or reliance on its contents.</p>
+
+    <h2>Links to Third-Party Websites</h2>
+    <p>Our Site may contain links to third-party websites. ZGO Charge LLC has no control over these external sites'
+      content, nature, or availability. The inclusion of links does not constitute an endorsement of their content or
+      views.</p>
+
+    <h2>How We Collect Information</h2>
+    <p>We collect information about you in several ways:</p>
+    <ol>
+      <li>Directly From You: Information you provide when using the Services (e.g., when signing up for newsletters,
+        responding to surveys, creating an account, or processing payments).</li>
+      <li>Automatically: Information collected via cookies, web beacons, and other tracking technologies (e.g., IP
+        address, browser type, device details, and location data).</li>
+      <li>From Third Parties: Information obtained from social networking platforms and third-party analytics providers.
+      </li>
+    </ol>
+
+    <h2>Types of Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li>Personal Information: Name, email address, phone number, billing and shipping addresses, payment details, and
+        demographic data.</li>
+      <li>Device and Usage Data: IP address, browser type, operating system, device identifiers, and activity on our
+        Site and App.</li>
+      <li>Geolocation Data: Approximate or precise location, if permitted by you.</li>
+      <li>Charging and Transaction Data: Charging station details, usage patterns, payment history, and preferences.
+      </li>
+    </ul>
+    <h2>Use Of Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+      <li>To provide and improve our Services.</li>
+      <li>To process and verify transactions.</li>
+      <li>To communicate with you about your account, inquiries, and updates.</li>
+      <li>To send you promotional communications, newsletters, and marketing offers (with your consent).</li>
+      <li>To customize and enhance your user experience</li>
+      <li>To conduct research, surveys, and analytics for business improvement.</li>
+      <li>To comply with legal and regulatory obligations.</li>
+    </ul>
+    <h2>Sharing Your Information</h2>
+    <p>We may share your information under the following circumstances:</p>
+    <ol>
+      <li>Service Providers: With trusted third parties who assist us in delivering our Services (e.g., payment
+        processors, hosting providers, and analytics services).</li>
+      <li>Business Transfers: As part of a merger, acquisition, or sale of company assets.</li>
+      <li>Legal Requirements: To comply with legal obligations or protect the safety and rights of ZGO, our users, or
+        others.</li>
+      <li>Aggregate or De-Identified Data: For marketing, research, or other business purposes.</li>
+    </ol>
+    <h2>Note: ZGO does not sell your personal information.</h2>
+    <h2>Cookies and Tracking Technologies</h2>
+    <p>We use cookies and similar technologies to enhance your browsing experience and analyze site traffic. You can
+      manage your cookie preferences via your browser settings. Disabling cookies may limit some features of our Site.
+    </p>
+    <h2>Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+    <ul>
+      <li>Access: Request details about the personal information we hold.</li>
+      <li>Correction: Correct inaccurate or incomplete information.</li>
+      <li>Deletion: Request deletion of your personal information, subject to legal requirements.</li>
+      <li>Opt-Out: Decline marketing communications or targeted advertising.</li>
+      <li>Non-Discrimination: Exercise your rights without adverse consequences.</li>
+      <li>To conduct research, surveys, and analytics for business improvement.</li>
+    </ul>
+    <p>To exercise your rights, please contact us using the information in the “Contact Us” section below.</p>
+    <h2>Data Security</h2>
+    <p>We employ reasonable security measures to protect your data from unauthorized access, disclosure, or misuse.
+      However, no method of transmission over the internet or storage system is entirely secure.</p>
+    <h2>Children's Privacy</h2>
+    <p>Our Services are not intended for children under 13 years of age. If we learn that we have collected personal
+      information from a child under 13, we will delete it promptly.</p>
+    <h2>Update To This Policy</h2>
+    <p>We may update this Policy periodically. Changes will be posted on this page with an updated Effective Date.
+      Significant changes may be communicated via email or notices on our Site.</p>
+    <h2>Contact Us</h2>
+    <p>If you have questions or concerns about this Policy or wish to exercise your rights, contact us at:
+      Email: hello@zgocharge.com
+    </p>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <h3>LET'S START CHARGING!</h3>
+        <p>Talk with us & join our happy customers.</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/Group.png" alt="Instagram"></a>
+          <a href="#"><img src="images/Facbook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p>Tel: +1.510.229.9075</p>
+        <p>Email: hello@zggocharge.com</p>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><a href="https://zgocharge.iokonic.in/privacy-policy.html">Privacy Policy</a></p>
+      <p>© 2025 All Rights Reserved. Design and Development</p>
+    </div>
+  </footer>
+</body>
+
+</html>

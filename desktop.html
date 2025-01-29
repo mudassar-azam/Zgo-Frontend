@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/desktop-style.css">
+  <title>ZGO Website</title>
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #ffffff, #0b1a57);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #loader .container01 {
+      text-align: center;
+    }
+
+    #loader .logo {
+      margin-bottom: 20px;
+    }
+
+    #loader .logo .logo-icon {
+      width: 150px;
+      height: auto;
+    }
+
+    #loader .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #loader .icons .icon img {
+      width: 40px;
+      height: auto;
+      animation: rotateX 3s linear infinite;
+    }
+    @keyframes rotateX {
+      0% {
+        transform: rotateX(0deg);
+      }
+      100% {
+        transform: rotateX(360deg);
+      }
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById('loader').style.display = 'none';
+      }, 2000); 
+    };
+  </script>
+</head>
+
+<body>
+  <div id="loader">
+    <div class="container01">
+      <div class="logo">
+        <img class="logo-icon" src="images/Layer14.png" alt="Logo">
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 1">
+        </div>
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 2">
+        </div>
+        <div class="icon">
+          <img src="images/Layer13.png" alt="Icon 3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <img src="images/Banner.png" alt="Header Image" class="header-image">
+    <div class="overlay">
+      <div class="container">
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Why ZgoCharge</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#" class="contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <nav class="nav2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Why ZgoCharge</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#" class="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+    
+            hamburger.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            });
+        </script>
+        <div class="header-left">
+          <img src="images/Zgo_logo_w_plug.png" alt="Zgo Logo" class="logo">
+          <div class="title">We Make Installing And Operating EV Charges Smooth, Sustaiable And Hassle-free</div>
+          <div class="header-left-div1">
+            <div class="header-left-div2">
+              <div><img class="header-left-div2-1" src="images/Zgo_bullet_charge_icon.png"></div>
+              <div class="header-left-div2-2">Ecosystem: combines state-of-the-art DC and AC chargers</div>
+            </div>
+            <div class="header-left-div2">
+              <div><img class="header-left-div2-1" src="images/Zgo_bullet_charge_icon.png"></div>
+              <div class="header-left-div2-2">Fast: Industry-leading chargers for minimal wait times</div>
+            </div>
+            <div class="header-left-div2">
+              <div><img class="header-left-div2-1" src="images/Zgo_bullet_charge_icon.png"></div>
+              <div class="header-left-div2-2">Inviting: Lounge areas and retail space</div>
+            </div>
+            <div class="header-left-div2">
+              <div><img class="header-left-div2-1" src="images/Zgo_bullet_charge_icon.png"></div>
+              <div class="header-left-div2-2">Reliable: A network you can depend on, 24/7.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> 
+  <div class="container2">
+    <h1 class="card-head">Why Choose Zgo Charge</h1>
+    <p class="description">
+      Driven by a passion for sustainability and innovation, at ZGO Charge we aim to provide a comprehensive and
+      hassle-free EV charger installation and operation tailored for businesses.
+    </p>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/Layer1.png" alt="Level 2 and level 3 Chargers">
+        <h2>Level 2 and level 3 Chargers</h2>
+        <p>AC and Fast DC chargers meaning more diverse users</p>
+      </div>
+      <div class="card">
+        <img src="images/Layer2.png" alt="Passive Income">
+        <h2>Passive Income</h2>
+        <p>Business Owners receive passive income through leasing parking spaces to Zgo Chargers</p>
+      </div>
+      <div class="card">
+        <img src="images/Layer3.png" alt="Turnkey Installation & Operation">
+        <h2>Turnkey Installation & Operation</h2>
+        <p>We are in charge of all hardware, software, site prep, installation and operation of EV chargers</p>
+      </div>
+      <div class="card">
+        <img src="images/Layer4.png" alt="ZERO cost on businesses">
+        <h2>ZERO cost on businesses</h2>
+        <p>No capital or operating cost. We handle everything</p>
+      </div>
+    </div>
+  </div>
+   <div class="container3">
+    <h1 class="container-h1">How It Works</h1>
+    <div class="steps">
+      <div class="step">
+        <img src="images/Layer5.png" alt="Schedule Site Walk">
+        <p>Schedule Site Walk</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <img src="images/Layer6.png" alt="Proposal and Agreement">
+        <p>Proposal and Agreement</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <img src="images/Layer7.png" alt="Permits">
+        <p>Permits</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <img src="images/Layer8.png" alt="Site Prep & Construction">
+        <p>Site Prep & Construction</p>
+        <div class="down-arrow">↓</div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <img src="images/Layer9.png" alt="Install Chargers">
+        <p>Install Chargers</p>
+      </div>
+      <div class="arrow2">→</div>
+      <div class="step">
+        <img src="images/Layer10.png" alt="Test and Deploy">
+        <p>Test and Deploy</p>
+      </div>
+      <div class="arrow2">→</div>
+      <div class="step">
+        <img src="images/Layer11.png" alt="Charger Ready">
+        <p>Charger Ready</p>
+      </div>
+      <div class="arrow2">→</div>
+      <div class="step">
+        <img src="images/Layer12.png" alt="Maintenance Support">
+        <p>Maintenance Support</p>
+      </div>
+    </div>
+
+    
+
+    <div class="cont-description">
+      <p>
+        Zgo’s primary business model is a turnkey, owner-operator, charging solution
+        where Zgo Charge leases parking spots or develops an area of land covering
+        installation, operation, and maintenance costs. Our interest in investing
+        capital at a site is directly tied to the will of the owner, government, and
+        city permits. With this, Zgo Charge guarantees a revenue stream for both; us
+        and partners (landlords, businesses… etc).
+      </p>
+      <h2>EV Chargers Made Easy!</h2>
+    </div>
+  </div> 
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <h3>LET'S START CHARGING!</h3>
+        <p>Talk with us & join our happy customers.</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/Group.png" alt="Instagram"></a>
+          <a href="#"><img src="images/Facbook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p>Tel: +1.510.229.9075</p>
+        <p>Email: hello@zggocharge.com</p>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><a href="https://zgocharge.iokonic.in/privacy-policy.html">Privacy Policy</a></p>
+      <p>© 2025 All Rights Reserved. Design and Development</p>
+    </div>
+  </footer>
+</body>
+
+</html>
