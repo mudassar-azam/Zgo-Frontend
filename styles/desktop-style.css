@@ -88,8 +88,8 @@ html {
 .nav2 a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav2 a.contact {
@@ -118,8 +118,8 @@ html {
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav a.contact {
@@ -141,7 +141,8 @@ html {
 }
 
 .logo {
-    width: 150px;
+    width: 20em;
+    height: 13em;
     margin-bottom: 15px;
 }
 
@@ -151,6 +152,7 @@ html {
     font-weight: bold;
     margin: 0;
     color: #3b5393;
+    font-style: italic;
 }
 
 .header-left-div1 {
@@ -158,6 +160,9 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    color: #365393;
+    font-size: 24px;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .header-left-div2 {
@@ -179,18 +184,19 @@ html {
 }
 
 .card-head {
-    font-size: 2rem;
+    font-size: 48px;
     margin-bottom: 2em;
     font-weight: bold;
     color: white;
+    font-style:italic;
 }
 
 .description {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto 5em auto;
+    font-size: 40px;
+    margin: 1em 5em;
     line-height: 1.5;
     color: white;
+    font-style:italic;
 }
 
 .card-container {
@@ -287,7 +293,6 @@ html {
   .down-arrow {
     font-size: 2em;
     color: #00b2bf;
-    margin: 10px 0;
   }
   
   .cont-description {
@@ -295,8 +300,10 @@ html {
   }
   
   .cont-description p {
-    font-size: 1em;
+    font-size: 30px;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 5em;
   }
   
   .cont-description h2 {
@@ -385,15 +392,36 @@ html {
     border-radius: 50%;
     padding: 5px 10px;
   }
-@media only screen and (max-width: 768px) {
-
-  .hamburger {
-        display: flex; /* Show on mobile devices */
+  @media only screen and (max-width: 768px) {
+    .header {
+        height: 51vh;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: auto;
+        margin: 0;
     }
 
     .header-image {
         width: 100%;
-        height: auto;
+        height: 120%;
+        object-fit: unset;
     }
 
     .nav {
@@ -406,43 +434,43 @@ html {
 
     .header-left {
         position: relative;
-        top: 20px;
+        top: -20px;
         transform: none;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .logo {
-        width: 100px;
-        margin: 0 auto 10px;
+        padding: 10px;
+        text-align: left;
     }
 
     .title {
-        font-size: 24px;
+        font-size: 17px;
         width: 100%;
-        line-height: 1.5;
+        color: black;
     }
 
-    .header-left-div1 {
-        margin: 20px 0;
-        gap: 15px;
+    .headdiv{
+      margin-left: 1.5em !important;
     }
 
-    .header-left-div2 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .header-left-div1{
+      font-size: 17px;
     }
 
-    .header-left-div2-1 {
-        margin-bottom: 10px;
-        height: 25px;
-        width: 25px;
+    .header-left-div2 img {
+      display: none; /* Hide images on mobile */
     }
-
+    
+    .header-left-div2 .bullet-point {
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      border-radius: 50%;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    
     .header-left-div2-2 {
-        font-size: 14px;
-        line-height: 1.4;
+      display: inline-block;
+      margin-top: 5px;
+      color: black;
     }
 
     .overlay {
@@ -452,8 +480,8 @@ html {
     .container {
         padding: 0 15px;
     }
-
 }
+
 
 @media (max-width: 768px) {
     .container2 {
@@ -469,6 +497,7 @@ html {
     .description {
         font-size: 0.95rem;
         margin: 10px;
+        font-style: italic;;
     }
 
     .card-container {
@@ -494,13 +523,95 @@ html {
     }
 
     .steps {
-        flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0px 0;
+    }
+  
+    .step {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+    
+    .arrow {
+      flex: 0 0 10%;
+      max-width: 10%;
+      display: block;
+      font-size: 2em;
+      margin: 0 auto;
+    }
+  
+    .arrow2 {
+      display: none;
+    }
+
+    .step.marginrt + .arrow2 {
+      display: block;
+      transform: rotate(0deg);
+    }
+
+    .step.step7 + .arrow2 {
+      display: block;
+      transform: rotate(180deg);
+    }
+
+    .step2div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step2div2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5em;
+    }
+  
+    .step:nth-child(3) ~ .arrow {
+      display: block;
+      transform: rotate(180deg);
+    }
+
+
+    .down-arrow{
+      text-align: left;
+      margin-left: 2.2em;
+    }
+
+    .down-arrow2{
+      margin-left: 1.5em;
+    }
+
+    .marginlt{
+      margin-top: 1em;
+    }
+
+    .marginrt{
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
+    .margint{
+      margin-top: 3em;
+    }
+    
+      .step img {
+        width: 45px;
+        height: 45px;
       }
-      .arrow {
-        transform: rotate(90deg);
+    
+      .step p {
+        font-size: 0.9em; 
       }
-      .arrow2 {
-        transform: rotate(90deg);
+    
+      .cont-description p {
+        font-size: 1.2em; 
+        margin: 0 1em; 
+      }
+    
+      .cont-description h2 {
+        font-size: 1.5em; 
       }
 
       .footer-container {
@@ -520,8 +631,11 @@ html {
       }
     
       .contact-form {
-        width: 100%; 
-        margin-bottom: 1em; 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+          margin-bottom: 1em;
       }
     
       .footer-bottom {
