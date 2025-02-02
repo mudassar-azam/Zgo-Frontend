@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Atrament';
+  src: url('../fonts/AtramentTRIAL-Light-BF65a72dd341b06.otf') format('opentype');
+}
 
 body,
 html {
@@ -17,7 +21,6 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .overlay {
@@ -87,20 +90,21 @@ html {
 
 .nav2 a {
   text-decoration: none;
-  color: black;
+  color: #27376A;
   font-size: 24px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav2 a.contact {
-  background-color: #32c832;
+  background-color: #33AE82;
   padding: 5px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  color: white;
 }
 
 .nav2 a.contact:hover {
-  background-color: #28a428;
+  background-color: #33AE82;
 }
 
 .nav ul {
@@ -117,25 +121,26 @@ html {
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: #27376A;
     font-size: 24px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav a.contact {
-    background-color: #32c832;
+    background-color: #33AE82;
     padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    color: white;
 }
 
 .nav a.contact:hover {
-    background-color: #28a428;
+    background-color: #33AE82;
 }
 
 .header-left {
     position: absolute;
-    top: 35%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: left;
 }
@@ -148,7 +153,7 @@ html {
 
 .title {
     width: 69%;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
     color: #3b5393;
@@ -159,7 +164,6 @@ html {
     margin: 1em 0em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
     color: #365393;
     font-size: 24px;
     font-family: 'Roboto Flex', sans-serif;
@@ -185,18 +189,18 @@ html {
 
 .card-head {
     font-size: 48px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-weight: bold;
     color: white;
     font-style:italic;
 }
 
 .description {
+    font-family: 'Atrament', sans-serif;
     font-size: 40px;
     margin: 1em 5em;
     line-height: 1.5;
     color: white;
-    font-style:italic;
 }
 
 .card-container {
@@ -229,14 +233,15 @@ html {
 }
 
 .card h2 {
-    font-size: 1.2rem;
+    font-size: 24px;
     margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 24px;
     color: #d0d0d0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container3 {
@@ -274,24 +279,24 @@ html {
   
   .step p {
     font-size: 1em;
-    margin: 0;
+    color: #3B5393;
   }
   
   .arrow {
-    font-size: 2em;
+    font-size: 5em;
     color: #00b2bf;
     margin: 0 10px;
   }
 
   .arrow2 {
-    font-size: 2em;
+    font-size: 5em;
     color: #00b2bf;
     margin: 0 10px;
     transform: rotate(180deg);
   }
   
   .down-arrow {
-    font-size: 2em;
+    font-size: 5em;
     color: #00b2bf;
   }
   
@@ -301,15 +306,18 @@ html {
   
   .cont-description p {
     font-size: 30px;
-    line-height: 1.6;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif;
     margin: 0 5em;
+    color: #061953;
   }
   
   .cont-description h2 {
-    font-size: 1.8em;
+    font-size: 48px;
     color: #00b2bf;
     margin-top: 20px;
+    font-style: italic;
+    font-weight: 700;
   }
   footer {
     background-color: #0f254b;
@@ -327,6 +335,7 @@ html {
   
   .contact-info {
     max-width: 50%;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   
   .contact-info h3 {
@@ -443,7 +452,7 @@ html {
     .title {
         font-size: 17px;
         width: 100%;
-        color: black;
+        color: #365393;
     }
 
     .headdiv{
@@ -451,17 +460,17 @@ html {
     }
 
     .header-left-div1{
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .header-left-div2 img {
-      display: none; /* Hide images on mobile */
+      display: none; 
     }
     
     .header-left-div2 .bullet-point {
       width: 10px;
       height: 10px;
-      background-color: black;
+      background-color: #365393;
       border-radius: 50%;
       margin-right: 10px;
       display: inline-block;
@@ -470,7 +479,7 @@ html {
     .header-left-div2-2 {
       display: inline-block;
       margin-top: 5px;
-      color: black;
+      color: #365393;
     }
 
     .overlay {
@@ -484,6 +493,13 @@ html {
 
 
 @media (max-width: 768px) {
+    #OuterMainDiv1{
+      display: block !important;
+      margin-top: -4em;
+    }
+    #stepDiv1,#stepDiv2{
+      display: none !important;
+    }
     .container2 {
         padding: 1.5em 15px;
         margin-top: 2.5em;
@@ -495,9 +511,9 @@ html {
     }
 
     .description {
+        font-family: 'Atrament', sans-serif;
         font-size: 0.95rem;
         margin: 10px;
-        font-style: italic;;
     }
 
     .card-container {
@@ -531,6 +547,15 @@ html {
     .step {
       flex: 0 0 45%;
       max-width: 45%;
+      margin-top: 3em;
+    }
+
+    .step p {
+      color: #3B5393;
+    }
+
+    .cont-description p {
+      color: #061953;
     }
     
     .arrow {
@@ -540,9 +565,11 @@ html {
       font-size: 2em;
       margin: 0 auto;
     }
+
   
     .arrow2 {
       display: none;
+      font-size: 2em;
     }
 
     .step.marginrt + .arrow2 {
@@ -577,6 +604,7 @@ html {
     .down-arrow{
       text-align: left;
       margin-left: 2.2em;
+      font-size: 2em;
     }
 
     .down-arrow2{
@@ -584,16 +612,16 @@ html {
     }
 
     .marginlt{
-      margin-top: 1em;
+      margin-top: 3em;
     }
 
     .marginrt{
-      margin-right: 2em;
+      margin-right: 1em;
       margin-top: 1em;
     }
 
     .margint{
-      margin-top: 3em;
+      margin-top: 6em;
     }
     
       .step img {
@@ -624,6 +652,7 @@ html {
       .contact-info {
         width: 100%;
         margin-bottom: 1em; 
+        font-family: 'Roboto Condensed', sans-serif;
       }
     
       .social-icons {

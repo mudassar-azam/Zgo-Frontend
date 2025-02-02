@@ -80,14 +80,14 @@ body, html {
 }
 
 .nav2 a.contact {
-  background-color: #32c832;
+  background-color: #33AE82;
   padding: 5px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .nav2 a.contact:hover {
-  background-color: #28a428;
+  background-color: #33AE82;
 }
 
 .nav {
@@ -116,20 +116,20 @@ body, html {
 }
 
 .nav a.contact {
-  background-color: #32c832;
+  background-color: #33AE82;
   padding: 5px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .nav a.contact:hover {
-  background-color: #28a428;
+  background-color: #33AE82;
 }
 
 .header-left {
   position: absolute;
   top: 35%;
-  left: 50px;
+  left: -10em;
   transform: translateY(-50%);
   text-align: left;
 }
@@ -155,27 +155,28 @@ body, html {
 }
 
 .privacy-policy h1 {
-  color: black;
+  color: #011450;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
 }
 
 .privacy-policy h2 {
   margin-top: 20px;
-  color: black;
+  color: #011450;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
 }
 
 .privacy-policy p,
 .privacy-policy li {
+  color: #011450;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
 }
 
 .privacy-policy a {
-  color: black;
+  color: #011450;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
@@ -204,6 +205,7 @@ footer {
 
 .contact-info {
   max-width: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .contact-info h3 {
@@ -327,21 +329,24 @@ footer {
   .privacy-policy h1 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    color: #011450;
   }
 
   .privacy-policy h2 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    color: #011450;
   }
 
   .privacy-policy p,
   .privacy-policy li {
     font-family: 'Roboto', sans-serif;
+    color: #011450;
     font-size: 18px;
   }
 
   .privacy-policy a {
-    color: black;
+    color: #011450;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
