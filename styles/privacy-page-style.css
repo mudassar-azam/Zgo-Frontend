@@ -139,7 +139,7 @@ body, html {
 .header-left {
   position: absolute;
   top: 25%;
-  left: -10em;
+  left: 1em;
   transform: translateY(-50%);
   text-align: left;
 }

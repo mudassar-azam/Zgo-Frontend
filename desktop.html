@@ -71,34 +71,16 @@
 </head>
 
 <body>
-  <div id="loader">
-    <div class="container01">
-      <div class="logo">
-        <img class="logo-icon" src="images/Layer14.png" alt="Logo">
-      </div>
-      <div class="icons">
-        <div class="icon">
-          <img src="images/Layer13.png" alt="Icon 1">
-        </div>
-        <div class="icon">
-          <img src="images/Layer13.png" alt="Icon 2">
-        </div>
-        <div class="icon">
-          <img src="images/Layer13.png" alt="Icon 3">
-        </div>
-      </div>
-    </div>
-  </div>
-  <header class="header">
+  <header class="header" id="header">
     <img src="images/Banner.png" alt="Header Image" class="header-image">
     <div class="overlay">
       <div class="container">
         <nav class="nav">
           <ul>
-            <li><a href="https://zgocharge.iokonic.in/desktop.htm">Home</a></li>
-            <li><a href="#">Why ZgoCharge</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#" class="contact">Contact Us</a></li>
+            <li><a href="#header" id="Header">Home</a></li>
+            <li><a href="#why-zgo-charge" id="whyZgoCharge">Why ZgoCharge</a></li>
+            <li><a href="#how-it-works" id="howItWorks">How It Works</a></li>
+            <li><a href="#contact-us" id="contactUs" class="contact">Contact Us</a></li>
           </ul>
         </nav>
         <div class="hamburger" id="hamburger">
@@ -106,25 +88,16 @@
           <div></div>
           <div></div>
         </div>
-        <!-- Sidebar -->
         <div class="sidebar" id="sidebar">
           <nav class="nav2">
             <ul>
-              <li><a href="https://zgocharge.iokonic.in/desktop.htm">Home</a></li>
-              <li><a href="#">Why ZgoCharge</a></li>
-              <li><a href="#">How It Works</a></li>
-              <li><a href="#" class="contact">Contact Us</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#why-zgo-charge">Why ZgoCharge</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#contact-us" class="contact">Contact Us</a></li>
             </ul>
           </nav>
         </div>
-        <script>
-          const hamburger = document.getElementById('hamburger');
-          const sidebar = document.getElementById('sidebar');
-
-          hamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-          });
-        </script>
         <div class="header-left">
           <img src="images/Zgo_logo_w_plug.png" alt="Zgo Logo" class="logo">
           <div class="headdiv" style="margin-left:5.5em">
@@ -154,10 +127,45 @@
           </div>
 
         </div>
+
       </div>
     </div>
   </header>
-  <div class="container2">
+  <script>
+    document.getElementById('whyZgoCharge').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('why-zgo-charge').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('howItWorks').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('contactUs').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('Header').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav2 a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('active'); 
+      });
+    });
+  </script>
+  <div class="container2" id="why-zgo-charge">
     <h1 class="card-head">Why Zgo Charge</h1>
     <p class="description">
       Driven by a passion for sustainability and innovation, at ZGO Charge we aim to provide a comprehensive and
@@ -186,7 +194,8 @@
       </div>
     </div>
   </div>
-  <div class="container3">
+  
+  <div class="container3" id="how-it-works">
     <h1 class="container-h1">How It Works</h1>
     <div id="OuterMainDiv1" style="display: none;">
       <div class="steps">
@@ -201,25 +210,25 @@
           <div class="down-arrow">↓</div>
         </div>
         <div class="step">
-          <img src="images/Layer10.png" alt="Permits">
-          <p>Permits</p>
+          <img src="images/Layer9.png" alt="Site Prep & Construction">
+          <p>Site Prep & Construction</p>
         </div>
         <div class="arrow">→</div>
         <div class="step marginlt">
-          <img src="images/Layer9.png" alt="Site Prep & Construction">
-          <p>Site Prep & Construction</p>
+          <img src="images/Layer10.png" alt="Permits">
+          <p>Permits</p>
         </div>
       </div>
       <div class="down-arrow down-arrow1">↓</div>
       <div class="steps">
         <div class="step2div">
           <div class="step marginrt">
-            <img src="images/Layer8.png" alt="Install Chargers">
+            <img src="images/Layer5.png" alt="Install Chargers">
             <p>Install Chargers</p>
           </div>
           <div class="arrow2">→</div>
           <div class="step">
-            <img src="images/Layer7.png" alt="Test and Deploy">
+            <img src="images/Layer6.png" alt="Test and Deploy">
             <p>Test and Deploy</p>
             <div class="down-arrow down-arrow2">↓</div>
           </div>
@@ -227,13 +236,13 @@
         <div class="arrow2">→</div>
         <div class="step2div2">
           <div class="step step7">
-            <img src="images/Layer6.png" alt="Charger Ready">
-            <p>Charger Ready</p>
+            <img src="images/Layer8.png" alt="Maintenance Support">
+            <p>Maintenance Support</p>
           </div>
           <div class="arrow2">→</div>
           <div class="step">
-            <img src="images/Layer5.png" alt="Maintenance Support">
-            <p>Maintenance Support</p>
+            <img src="images/Layer7.png" alt="Charger Ready">
+            <p>Charger Ready</p>
           </div>
         </div>
       </div>
@@ -262,23 +271,23 @@
     </div>
     <div class="steps" id="stepDiv2">
       <div class="step" style="margin-top: 4em;">
-        <img src="images/Layer8.png" alt="Install Chargers">
-        <p>Install Chargers</p>
+        <img src="images/Layer8.png" alt="Maintenance Support">
+        <p>Maintenance Support</p>
       </div>
       <div class="arrow2">→</div>
       <div class="step" style="margin-top: 4em;">
-        <img src="images/Layer7.png" alt="Test and Deploy">
-        <p>Test and Deploy</p>
-      </div>
-      <div class="arrow2">→</div>
-      <div class="step" style="margin-top: 4em;">
-        <img src="images/Layer6.png" alt="Charger Ready">
+        <img src="images/Layer7.png" alt="Charger Ready">
         <p>Charger Ready</p>
       </div>
       <div class="arrow2">→</div>
       <div class="step" style="margin-top: 4em;">
-        <img src="images/Layer5.png" alt="Maintenance Support">
-        <p>Maintenance Support</p>
+        <img src="images/Layer6.png" alt="Test and Deploy">
+        <p>Test and Deploy</p>
+      </div>
+      <div class="arrow2">→</div>
+      <div class="step" style="margin-top: 4em;">
+        <img src="images/Layer5.png" alt="Install Chargers">
+        <p>Install Chargers</p>
       </div>
     </div>
     <div class="cont-description">
@@ -293,7 +302,7 @@
       <h2>EV Chargers Made Easy!</h2>
     </div>
   </div>
-  <footer>
+  <footer id="contact-us">
     <div class="footer-container">
       <div class="contact-info">
         <h3>LET'S START CHARGING!</h3>
@@ -310,6 +319,7 @@
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <textarea placeholder="Message"></textarea>
+        <button class="send" type="button">Send</button>
       </div>
     </div>
     <div class="footer-bottom">
@@ -317,6 +327,6 @@
       <p>© 2025 All Rights Reserved. Design and Development</p>
     </div>
   </footer>
+  
 </body>
-
 </html>

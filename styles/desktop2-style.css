@@ -14,12 +14,15 @@
     font-family: 'Roboto Condensed Light';
     src: url('../fonts/Roboto_Condensed-Light.ttf') format('opentype');
   }
-  
+  @font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light.ttf') format('opentype');
+  }
   body,
   html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
   
   .hamburger {
@@ -68,7 +71,7 @@
   
   .nav2 a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 24px;
     font-family: 'Roboto Condensed Light', sans-serif;
   }
@@ -116,7 +119,7 @@
   
   .nav {
     position: absolute;
-    top: 100px;
+    top: 10.5em;
     right: 20px;
   }
   
@@ -154,9 +157,6 @@
   
   
   .header-left {
-      position: absolute;
-      top: 30%;
-      transform: translateY(-50%);
       text-align: left;
   }
   
@@ -207,13 +207,13 @@
       font-weight: bold;
       color: white;
       font-style:italic;
-      font-family: 'Atrament', sans-serif;
+      font-family: 'Atrament Bold Italic', sans-serif;
   }
   
   .description {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 40px;
-      margin: 1em 5em;
+      margin: 1em 9em;
       line-height: 1.5;
       color: #d0d0d0;
       font-weight: 200;
@@ -274,7 +274,7 @@
       font-size: 48px;
       color: #003366;
       margin-bottom: 20px;
-      font-family: 'Atrament', sans-serif;
+      font-family: 'Atrament Bold Italic', sans-serif;
       font-style: italic;
     }
     
@@ -300,7 +300,7 @@
     .step p {
       font-size: 24px;
       color: #3B5393;
-      font-family: 'Roboto Condensed', sans-serif;
+      font-family: 'Roboto Light', sans-serif;
       font-weight: 300;
     }
     
@@ -338,9 +338,10 @@
     .cont-description h2 {
       font-size: 48px;
       color: #00b2bf;
-      margin-top: 20px;
+      margin-top: 1em;
       font-style: italic;
       font-weight: 700;
+      font-family: 'Atrament Bold Italic', sans-serif;
     }
     footer {
       background-color: #0f254b;
@@ -360,6 +361,15 @@
       max-width: 50%;
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 300;
+    }
+
+    .send {
+      background-color: #00B2BF;
+      padding: 5px 15px;
+      transition: background-color 0.3s;
+      color: white;
+      border-color: #00B2BF;
+      width: 15%;
     }
     
     .contact-info h3 {
@@ -439,7 +449,7 @@
           cursor: pointer;
           position: absolute;
           right: 20px;
-          top: 20px;
+          top: -10px;
       }
       
       .header-top {
@@ -534,10 +544,16 @@
           padding: 1.5em 15px;
           margin-top: 4.25em;
       }
+
+      .container-h1 {
+        font-family: 'Atrament Bold Italic', sans-serif;
+        font-size: 1.6rem;
+      }
   
       .card-head {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           margin-bottom: 0.5em;
+          font-family: 'Atrament Bold Italic', sans-serif;
       }
   
       .description {
@@ -583,7 +599,7 @@
   
       .step p {
         color: #3B5393;
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Roboto Light', sans-serif;
         font-weight: 300;
         font-size: 0.9em;
       }
@@ -672,6 +688,7 @@
       
         .cont-description h2 {
           font-size: 1.5em; 
+          font-family: 'Atrament Bold Italic', sans-serif;
         }
   
         .footer-container {
@@ -718,5 +735,9 @@
       
         .footer-bottom a {
           margin-bottom: 10px; 
+        }
+
+        .send {
+          width: 25%;
         }
   }

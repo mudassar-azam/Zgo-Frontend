@@ -89,15 +89,15 @@
       </div>
     </div>
   </div>
-  <header class="header">
+  <header class="header" id="header">
     <div class="overlay">
       <div class="container">
         <nav class="nav">
           <ul>
-            <li><a href="https://zgocharge.iokonic.in/desktop.html">Home</a></li>
-            <li><a href="#">Why ZgoCharge</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#" class="contact">Contact Us</a></li>
+            <li><a href="#header" id="Header">Home</a></li>
+            <li><a>Why ZgoCharge</a></li>
+            <li><a>How It Works</a></li>
+            <li><a href="#contact-us" id="contactUs" class="contact">Contact Us</a></li>
           </ul>
         </nav>
         <div class="hamburger" id="hamburger">
@@ -109,21 +109,13 @@
         <div class="sidebar" id="sidebar">
           <nav class="nav2">
             <ul>
-              <li><a href="https://zgocharge.iokonic.in/desktop.htm">Home</a></li>
-              <li><a href="#">Why ZgoCharge</a></li>
-              <li><a href="#">How It Works</a></li>
-              <li><a href="#" class="contact">Contact Us</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a>Why ZgoCharge</a></li>
+              <li><a>How It Works</a></li>
+              <li><a href="#contact-us" class="contact">Contact Us</a></li>
             </ul>
           </nav>
         </div>
-        <script>
-          const hamburger = document.getElementById('hamburger');
-          const sidebar = document.getElementById('sidebar');
-
-          hamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-          });
-        </script>
         <div class="header-left">
           <img src="images/Zgo_logo_w_plug.png" alt="Zgo Logo" class="logo">
           <div class="headingDiv">
@@ -133,6 +125,31 @@
       </div>
     </div>
   </header>
+  <script>
+
+    document.getElementById('contactUs').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('Header').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav2 a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('active'); 
+      });
+    });
+  </script>
   <div class="privacy-policy">
     <h1>Privacy Policy</h1>
     <p>Effective Date: Feb 2025</p>
@@ -228,7 +245,7 @@
       Email: hello@zgocharge.com
     </p>
   </div>
-  <footer>
+  <footer id="contact-us">
     <div class="footer-container">
       <div class="contact-info">
         <h3>LET'S START CHARGING!</h3>
